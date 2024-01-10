@@ -8,7 +8,8 @@
     "prestart:prod": "npm run build",
     "start:prod": "NODE_ENV=production node dist/main.js",
     "prestart:dev": "npm run build",
-    "start:dev": "NODE_ENV=dev concurrently \"npx tsc -w\" \"nodemon dist/main.js\""
+    "start:dev": "NODE_ENV=dev concurrently \"npx tsc -w\" \"nodemon dist/main.js\"",
+    "migrate": "drizzle-kit generate:pg"
   },
   "keywords": [],
   "author": "Grzegorz Laszczak",
@@ -16,15 +17,18 @@
   "dependencies": {
     "concurrently": "^8.2.2",
     "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.29.3",
     "fastify": "^4.25.2",
     "fastify-zod": "^1.4.0",
     "pino": "^8.17.2",
     "pino-pretty": "^10.3.1",
+    "postgres": "^3.4.3",
     "rimraf": "^5.0.5",
     "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20.10.8",
+    "drizzle-kit": "^0.20.10",
     "nodemon": "^3.0.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
