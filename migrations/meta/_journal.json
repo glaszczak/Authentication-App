@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1704925882208,
+      "tag": "0000_demonic_starbolt",
+      "breakpoints": false
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1704926183246,
+      "tag": "0001_quick_silhouette",
+      "breakpoints": false
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1704926483412,
+      "tag": "0002_steady_talisman",
+      "breakpoints": false
+    }
+  ]
+}
